@@ -52,9 +52,6 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'User_login.urls'
 
-#EMAIL BACKEND CONFIGURATION
-EMAIL_BACKEND = "django.core.mail.backends.filebased.EmailBackend"
-EMAIL_FILE_PATH = BASE_DIR / "sent_emails"
 
 
 import os
@@ -131,3 +128,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 LOGIN_REDIRECT_URL = 'home'
+
+
+#EMAIL BACKEND CONFIGURATION
+EMAIL_BACKEND = "django.core.mail.backends.filebased.EmailBackend"
+EMAIL_FILE_PATH = BASE_DIR / "sent_emails"
